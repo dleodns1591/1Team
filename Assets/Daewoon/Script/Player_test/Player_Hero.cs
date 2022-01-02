@@ -13,9 +13,13 @@ public class Player_Hero : MonoBehaviour
     public float PlayerHp = 2f;
     public GameObject Hp_01;
     public GameObject Hp_02;
+    public bool isinvincibility = false;
+    SpriteRenderer spriterenderer;
+
 
     void Start()
     {
+        spriterenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = true;
         startTime = Time.time + 3f;
@@ -30,8 +34,9 @@ public class Player_Hero : MonoBehaviour
         if (ButtonDown)
         {
             rb.AddForce(new Vector2(0f, HeroPower), ForceMode2D.Force);
+            
         }
-
+        Debug.Log(ButtonDown);
     }
 
     public void PointerDown()
@@ -48,22 +53,43 @@ public class Player_Hero : MonoBehaviour
     {
         if (other.transform.tag == "border")
         {
-            PlayerHp--;
-            if(PlayerHp == 1f)
+            if (isinvincibility == false)
             {
-                Hp_01.SetActive(false);
+                PlayerHp--;
+                if (PlayerHp == 1f)
+                {
+                    Hp_01.SetActive(false);
+                }
+                if (PlayerHp == 0f)
+                {
+                    Hp_02.SetActive(false);
+                }
             }
-            if(PlayerHp == 0f)
-            {
-                Hp_02.SetActive(false);
-            }
-
 
 
             if (Hp_02.activeSelf == false)
             {
                 Debug.Log("게임 오버");
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Ondamaged();
             }
         }
+    }
+    
+    void Ondamaged()
+    {
+        gameObject.layer = 6;
+        spriterenderer.color = new Color(1, 1, 1, 0.4f);
+        isinvincibility = true;
+        Invoke("OffDamaged", 1.5f);
+    }
+    void OffDamaged()
+    {
+        isinvincibility = false;
+        gameObject.layer = 7;
+        spriterenderer.color = new Color(1, 1, 1, 1);
     }
 }
