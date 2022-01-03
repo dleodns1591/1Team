@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 447755435}
   m_Layer: 0
   m_Name: Floor_Down
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1221,7 +1221,6 @@ MonoBehaviour:
   Hp_01: {fileID: 1837895321}
   Hp_02: {fileID: 2064505542}
   isinvincibility: 0
-  collider: 0
 --- !u!60 &991831047
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1525,7 +1524,7 @@ GameObject:
   - component: {fileID: 1281672658}
   m_Layer: 5
   m_Name: Key_Canvas
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
