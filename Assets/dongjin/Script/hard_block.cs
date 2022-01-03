@@ -14,7 +14,7 @@ public class hard_block : MonoBehaviour
     {
         if(collision.collider.tag == "player1" && ck == true)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
