@@ -970,7 +970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawntime: 2.5
-  hurdle: {fileID: 1729912641116455959, guid: 20f2863b62cdce6488bd242cff518a5f, type: 3}
+  hurdle: {fileID: 5884728179532841821, guid: 20f2863b62cdce6488bd242cff518a5f, type: 3}
+  hurdle2: {fileID: 4255034333686500157, guid: 0f8cda1385601e446ae9144dfc83e1ff, type: 3}
 --- !u!212 &2109856790
 SpriteRenderer:
   m_ObjectHideFlags: 0
