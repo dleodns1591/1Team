@@ -17,6 +17,7 @@ public class Player_Hero : MonoBehaviour
     
 
 
+    BoxCollider2D boxCollider;
     SpriteRenderer spriterenderer;
     
     
@@ -24,7 +25,7 @@ public class Player_Hero : MonoBehaviour
 
     void Start()
     {
-       
+        boxCollider = GetComponent<BoxCollider2D>();
         spriterenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = true;
@@ -96,7 +97,7 @@ public class Player_Hero : MonoBehaviour
         spriterenderer.color = new Color(1, 1, 1, 0.4f);
         isinvincibility = true;
         if (gameObject.transform.tag == "border")
-            hurdleblock.boxcollider.enabled = false;
+            boxCollider.enabled = false;
 
 
         Invoke("OffDamaged", 1.5f);
@@ -105,7 +106,7 @@ public class Player_Hero : MonoBehaviour
     {
         spriterenderer.color = new Color(1, 1, 1, 1);
         isinvincibility = false;
-        hurdleblock.boxcollider.enabled = false;
+        boxCollider.enabled = false;
         gameObject.layer = 7;
     }
 }
