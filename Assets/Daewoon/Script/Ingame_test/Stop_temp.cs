@@ -17,8 +17,6 @@ public class Stop_temp : MonoBehaviour
     [SerializeField] Transform Manu_Start_Btn;
     [SerializeField] Transform Manu_End_Btn;
 
-    public GameObject Black;
-
 
     public void Start()
     {
@@ -55,27 +53,5 @@ public class Stop_temp : MonoBehaviour
     public void Onclick()
     {
         SceneManager.LoadScene("Title");
-    }
-
-    public void Stop_delay()
-    {
-        Time.timeScale = 0f;
-        Black.SetActive(true);
-    }
-
-    public void Start_delay()
-    {
-        Time.timeScale = 1f;
-        Black.SetActive(false);
-    }
-
-    public void Main()
-    {
-        Time.timeScale = 1f;
-    }
-
-    public void Stop_01()
-    {
-        Invoke("Stop_delay", 0.45f);
     }
 }

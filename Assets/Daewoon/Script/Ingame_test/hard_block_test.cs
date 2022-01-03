@@ -17,7 +17,7 @@ public class hard_block_test : MonoBehaviour
     {
         if (other.transform.tag == "player1")
         {
-           //Destroy(gameObject);
+            Destroy(gameObject);
            
 
         }

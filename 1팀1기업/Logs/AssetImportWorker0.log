@@ -1,0 +1,364 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1415; Version 2009; 64bit' Language: 'ko' Physical Memory: 15724 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ehdwl/OneDrive/문서/GitHub/1Team/1팀1기업/1팀 1기업
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54629
+Successfully changed project path to: C:/Users/ehdwl/OneDrive/문서/GitHub/1Team/1팀1기업/1팀 1기업
+C:/Users/ehdwl/OneDrive/문서/GitHub/1Team/1팀1기업/1팀 1기업
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 157.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.21f1 (a38c86f6690f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ehdwl/OneDrive/문서/GitHub/1Team/1팀1기업/1팀 1기업/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   
+    VRAM:     3990 MB
+    Driver:   30.0.14.7212
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005302 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 147.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.533 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3534ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1569ms)
+			LoadAssemblies (200ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (504ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (94ms)
+			SetupLoadedEditorAssemblies (601ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.036518 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001C427DC0010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4269B9410 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42241A7E0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422AF1A70 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427C5F010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422A18A40 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4269DE020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4269DE020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E3FCE0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426779260 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426F27020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426F27020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426F55230 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422AF1A70 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42815D220 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E3FCE0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426779260 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4228B62E0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E3FCE0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426B72010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42825C020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427433010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426886020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42284B020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E3FCE0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426BC6010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426E69640 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42669CDC0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426BC6010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427460C20 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42286BDB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427549430 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422705C50 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42672F020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426BEE620 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 147.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.600 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3602ms)
+		BeginReloadAssembly (363ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (3089ms)
+			LoadAssemblies (231ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (987ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (163ms)
+			SetupLoadedEditorAssemblies (1259ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (293ms)
+				ProcessInitializeOnLoadAttributes (717ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (27ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2209 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 98.9 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2647.
+Total: 10.926200 ms (FindLiveObjects: 0.564700 ms CreateObjectMapping: 0.203700 ms MarkObjects: 9.946900 ms  DeleteObjects: 0.208000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 13.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 54.9 MB.
+System memory in use after: 55.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2647.
+Total: 10.213100 ms (FindLiveObjects: 0.408300 ms CreateObjectMapping: 0.220000 ms MarkObjects: 9.404100 ms  DeleteObjects: 0.177400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Siwon/scene/Player.unity
+  artifactKey: Guid(110aee5e66f278541942457a13984be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Siwon/scene/Player.unity using Guid(110aee5e66f278541942457a13984be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8315ce2f9a46a8efc0fea2e5a18a0b') in 0.029147 seconds 
+  Import took 0.037748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.542251 seconds.
+  path: Assets/dongjin/Scenes/ingame.unity
+  artifactKey: Guid(f56ba35f2d40f36469a12a948428cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dongjin/Scenes/ingame.unity using Guid(f56ba35f2d40f36469a12a948428cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd101ba45e6ada924c7162262c9a515eb') in 0.008909 seconds 
+  Import took 0.020809 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017917 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001C427E0B020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426B72010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42B9889B0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BB803D0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4226F6BD0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E37CD0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42842E010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C5DAC8F690 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42B38C020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E58010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E37CD0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426C6E010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C429DF0080 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422AE0BB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E37CD0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BA6C790 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427F71040 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42B2EC820 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BA6C790 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4269B9410 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C428005020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BAB2FB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426886020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422AE0BB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C428005020 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BAB2FB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BA437F0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BC4F7A0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C426BC6010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C427E58010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C5FCF42B10 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C4229E3FC0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C42BA6C790 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C422AE0BB0 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001C428254010 doesn't match image C:\Users\ehdwl\OneDrive\문서\GitHub\1Team\1팀1기업\1팀 1기업\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.234 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3235ms)
+		BeginReloadAssembly (329ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (2628ms)
+			LoadAssemblies (300ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (809ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (141ms)
+			SetupLoadedEditorAssemblies (1080ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (322ms)
+				ProcessInitializeOnLoadAttributes (686ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2649.
+Total: 8.041600 ms (FindLiveObjects: 0.404700 ms CreateObjectMapping: 0.182000 ms MarkObjects: 7.400700 ms  DeleteObjects: 0.051300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
