@@ -373,6 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawntime: 2.5
   hurdle: {fileID: 5884728179532841821, guid: 20f2863b62cdce6488bd242cff518a5f, type: 3}
+  hurdle2: {fileID: 4255034333686500157, guid: 5ce537f16685e33428d043cabbf02f46, type: 3}
 --- !u!212 &355510003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -732,7 +733,6 @@ MonoBehaviour:
   Manu_Btn: {fileID: 1392512389}
   Manu_Start_Btn: {fileID: 1982288666}
   Manu_End_Btn: {fileID: 312967984}
-  Black: {fileID: 917212026}
 --- !u!114 &580583760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,9 +1218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeroPower: 5
   PlayerHp: 2
-  Hp_01: {fileID: 1837895321}
-  Hp_02: {fileID: 2064505542}
-  isinvincibility: 0
 --- !u!60 &991831047
 PolygonCollider2D:
   m_ObjectHideFlags: 0
