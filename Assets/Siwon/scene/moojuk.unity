@@ -1196,6 +1196,7 @@ GameObject:
   - component: {fileID: 991831049}
   - component: {fileID: 991831048}
   - component: {fileID: 991831046}
+  - component: {fileID: 991831051}
   - component: {fileID: 991831047}
   m_Layer: 7
   m_Name: Hero
@@ -1221,6 +1222,8 @@ MonoBehaviour:
   Hp_01: {fileID: 1837895321}
   Hp_02: {fileID: 2064505542}
   isinvincibility: 0
+  cooltime: 0
+  booste: 0
 --- !u!60 &991831047
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1440,6 +1443,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991831051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991831045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0b6617832ccaa4f9356780c7a0f972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooltime: 0
+  buste: 0
 --- !u!1 &1009105486
 GameObject:
   m_ObjectHideFlags: 0
