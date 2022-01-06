@@ -26,7 +26,7 @@ public class Player_Hero : MonoBehaviour
 
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        BoxCollider2D bc = GetComponent<BoxCollider2D>();
         spriterenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = true;
@@ -116,7 +116,7 @@ public class Player_Hero : MonoBehaviour
     {
         spriterenderer.color = new Color(1, 1, 1, 1);
         isinvincibility = false;
-        boxCollider.enabled = false;
+        boxCollider.enabled = true;
         gameObject.layer = 7;
     }
 }
