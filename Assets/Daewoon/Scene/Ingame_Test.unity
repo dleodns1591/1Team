@@ -160,6 +160,8 @@ MonoBehaviour:
   Hp_01: {fileID: 192968366}
   Hp_02: {fileID: 1937316581}
   isinvincibility: 0
+  cooltime: 0
+  booste: 0
 --- !u!50 &92216911
 Rigidbody2D:
   serializedVersion: 4
@@ -2323,7 +2325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7176471}
+  m_Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0.7176471}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -57,7 +57,6 @@ public class Player_Hero : MonoBehaviour
                 booste = false;
             }
         }
-        
                 if (PlayerHp == 1f)
                 {
                     Hp_01.SetActive(false);
@@ -88,6 +87,7 @@ public class Player_Hero : MonoBehaviour
             {
                 PlayerHp--;
             }
+
             if (other.transform.tag == "floor")
             {
                 Debug.Log("게임오버");
@@ -97,7 +97,23 @@ public class Player_Hero : MonoBehaviour
             {
                 Ondamaged();       
             }
-
+        }
+        if(other.transform.tag == "hardborder")
+        {
+            Debug.Log("충돌");
+            if (isinvincibility == false)
+            {
+                if(booste == true)
+                {
+                    Debug.Log("부스터중 충돌");
+                    Ondamaged();
+                }
+                else
+                {
+                    PlayerHp--;
+                    Ondamaged();
+                }
+            }
         }
     }
     
@@ -116,7 +132,7 @@ public class Player_Hero : MonoBehaviour
     {
         spriterenderer.color = new Color(1, 1, 1, 1);
         isinvincibility = false;
-        boxCollider.enabled = false;
+        boxCollider.enabled = false;    
         gameObject.layer = 7;
     }
 }

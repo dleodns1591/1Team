@@ -13,7 +13,7 @@ public class hurdleblock : MonoBehaviour
         transform.position += moveleft * moveSpeed * Time.deltaTime;
         if (transform.position.x <= -moveRange)
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

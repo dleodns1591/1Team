@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5894085548046169567}
   m_Layer: 0
   m_Name: hard_block
-  m_TagString: Untagged
+  m_TagString: hardborder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.05, y: 1}
+  m_Size: {x: 1.1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &5923141030033944927
 Rigidbody2D:
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4255034333686500157}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df29d6a1544f05142948e3019c9dc719, type: 3}
   m_Name: 
