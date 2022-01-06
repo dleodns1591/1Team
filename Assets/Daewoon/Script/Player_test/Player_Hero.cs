@@ -14,7 +14,8 @@ public class Player_Hero : MonoBehaviour
     public GameObject Hp_01;
     public GameObject Hp_02;
     public bool isinvincibility = false;
-    
+    public float cooltime = 0;
+    public bool booste = false;
 
 
     BoxCollider2D boxCollider;
@@ -43,7 +44,30 @@ public class Player_Hero : MonoBehaviour
             rb.AddForce(new Vector2(0f, HeroPower), ForceMode2D.Force);
             
         }
+        if (Input.GetKey(KeyCode.LeftShift) && cooltime <= 0)
+        {
+            booste = true;
+            cooltime = 3;
+        }
+        if (booste)
+        {
+            cooltime -= Time.deltaTime;
+            if (cooltime <= 0)
+            {
+                booste = false;
+            }
+        }
         
+                if (PlayerHp == 1f)
+                {
+                    Hp_01.SetActive(false);
+                }
+                if (PlayerHp == 0f)
+                {
+                    Hp_02.SetActive(false);
+                    Debug.Log("게임 오버");
+                    Time.timeScale = 0f;
+                }
     }
 
     public void PointerDown()
@@ -63,23 +87,8 @@ public class Player_Hero : MonoBehaviour
             if (isinvincibility == false)
             {
                 PlayerHp--;
-                if (PlayerHp == 1f)
-                {
-                    Hp_01.SetActive(false);
-                }
-                if (PlayerHp == 0f)
-                {
-                    Hp_02.SetActive(false);
-                }
             }
-
-
-            if (Hp_02.activeSelf == false)
-            {
-                Debug.Log("게임 오버");
-                Time.timeScale = 0f;
-            }
-            else if(other.transform.tag == "floor")
+            if (other.transform.tag == "floor")
             {
                 Debug.Log("게임오버");
                 Time.timeScale = 0f;
@@ -88,10 +97,11 @@ public class Player_Hero : MonoBehaviour
             {
                 Ondamaged();       
             }
+
         }
     }
     
-    void Ondamaged()
+    public void Ondamaged()
     {
         gameObject.layer = 6;
         spriterenderer.color = new Color(1, 1, 1, 0.4f);

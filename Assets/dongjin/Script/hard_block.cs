@@ -8,14 +8,15 @@ public class hard_block : MonoBehaviour
     public GameObject dd;
     private void Update()
     {
-        ck = dd.GetComponent<buster>().buste;
+        dd = GameObject.Find("Hero");
+        ck = dd.GetComponent<Player_Hero>().booste;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.collider.tag == "player1" && ck == true)
+        if (collision.transform.tag == "player1" && ck == true)
         {
-            Destroy(gameObject);
+            dd.GetComponent<Player_Hero>().PlayerHp--;
+            dd.GetComponent<Player_Hero>().Ondamaged();
         }
     }
-
 }
