@@ -2,17 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ItemType
+{
+    Thunder,
+    Booster
+}
 public class Itemspawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //아니 아이템 스포너가 있었네?
+    public GameObject Thunder;
+    public GameObject Booster;
 
-    // Update is called once per frame
-    void Update()
+   
+    public void Spawn(ItemType itemType,Vector3 spawnPoint)
     {
         
+        switch (itemType)
+        {
+            case ItemType.Thunder:
+                Instantiate(Thunder,spawnPoint,Quaternion.Euler(0,0,0));
+                break;
+            case ItemType.Booster:
+                Instantiate(Booster,spawnPoint,Quaternion.Euler(0,0,0));
+                break;
+            default:
+                Debug.Assert(false);
+                break;
+        }
     }
+   
+
 }

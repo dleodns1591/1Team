@@ -2,26 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public abstract class Item : MonoBehaviour
 {
-    
-    
-    void Start()
-    {
-        
-    }
+    public float moveSpeed;
+    private Vector3 moveleft = Vector3.left;
+    public float moveRange;
 
-    
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+
+       
+    }
     void Update()
     {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "player")
+        transform.position += moveleft * moveSpeed * Time.deltaTime;
+        if (transform.position.x <= -moveRange)
         {
-            Destroy(other);
+            Destroy(this.gameObject);
         }
     }
-    
+
 }
+
+
+
+
