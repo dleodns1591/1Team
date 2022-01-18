@@ -5,13 +5,15 @@ using UnityEngine;
 public enum ItemType
 {
     Thunder,
-    Booster
+    Booster,
+    HpItem
 }
 public class Itemspawner : MonoBehaviour
 {
     //아니 아이템 스포너가 있었네?
     public GameObject Thunder;
     public GameObject Booster;
+    public GameObject HpItem;
 
    
     public void Spawn(ItemType itemType,Vector3 spawnPoint)
@@ -24,6 +26,9 @@ public class Itemspawner : MonoBehaviour
                 break;
             case ItemType.Booster:
                 Instantiate(Booster,spawnPoint,Quaternion.Euler(0,0,0));
+                break;
+            case ItemType.HpItem:
+                Instantiate(HpItem, spawnPoint, Quaternion.Euler(0,0,0));
                 break;
             default:
                 Debug.Assert(false);

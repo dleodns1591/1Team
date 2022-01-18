@@ -494,6 +494,7 @@ MonoBehaviour:
   spawntime: 2.5
   hurdle: {fileID: 5884728179532841821, guid: 20f2863b62cdce6488bd242cff518a5f, type: 3}
   hurdle2: {fileID: 4255034333686500157, guid: 0f8cda1385601e446ae9144dfc83e1ff, type: 3}
+  ScoreHurdle: {fileID: 4255113537229707657, guid: 715d3258648f3f14294dcea7bed90802, type: 3}
   Itemspawner: {fileID: 1118819499}
 --- !u!212 &355510003
 SpriteRenderer:
@@ -1338,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3269757ba195ea248afef5503f4fd166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeroPower: 5
+  HeroPower: 900
   PlayerHp: 2
   Hp_01: {fileID: 1837895321}
   Hp_02: {fileID: 2064505542}
@@ -1492,7 +1493,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.8
+  m_GravityScale: 0.7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2278,7 +2279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1843346425
 Transform:
   m_ObjectHideFlags: 0
@@ -2287,7 +2288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843346424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.23, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 991831050}

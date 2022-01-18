@@ -8,6 +8,8 @@ TagManager:
   - floor
   - player1
   - hardborder
+  - Thunder
+  - Hp
   layers:
   - Default
   - TransparentFX

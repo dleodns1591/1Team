@@ -41,7 +41,7 @@ public class Player_Hero : MonoBehaviour
 
         if (ButtonDown)
         {
-            rb.AddForce(new Vector2(0f, HeroPower), ForceMode2D.Force);
+            rb.AddForce(new Vector2(0,1 * HeroPower * Time.deltaTime) ,ForceMode2D.Force);
             
         }
         if (Input.GetKey(KeyCode.LeftShift) && cooltime <= 0)
