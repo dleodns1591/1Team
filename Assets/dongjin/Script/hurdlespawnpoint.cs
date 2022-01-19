@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class hurdlespawnpoint : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class hurdlespawnpoint : MonoBehaviour
     private Vector3 positions;
     public Itemspawner Itemspawner;
     const int SPAWN_PERCENT = 2;
+    public int Score = 0;
+    private GameObject StandardHurdle;
     void Start()
     {
         currenttime = spawntime;
@@ -54,15 +57,23 @@ public class hurdlespawnpoint : MonoBehaviour
         Instantiate(hurdle, transform.position, Quaternion.Euler(0, 0, 180));
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
         transform.position = new Vector3(13, spawnpoint - 14, 0);
-        GameObject ItemPosition = Instantiate(hurdle, transform.position, hurdle.transform.rotation);
+        StandardHurdle = Instantiate(hurdle, transform.position, hurdle.transform.rotation);
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
+        Instantiate(ScoreHurdle, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 7f, 0),Quaternion.Euler(0,0,0));
+        Scorehurdle();
         int randSpawnPercent = Random.Range(0, 10);//아이템 확률
         Debug.Log(randSpawnPercent);
         if(randSpawnPercent < SPAWN_PERCENT)
         {
             Debug.Log("아이템 드랍");
-            Itemspawner.Spawn(ItemType.Thunder, new Vector3(ItemPosition.transform.position.x, ItemPosition.transform.position.y+6.5f,0));//아이템 생성
+            Itemspawner.Spawn(ItemType.Thunder, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y+6.5f,0));//아이템 생성
         }
+    }
+    public void Scorehurdle()
+    {
+        Debug.Log("스코어 보더");
+        Instantiate(ScoreHurdle, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 7f, 0), Quaternion.Euler(0, 0, 0));
+        Score += 1000;
     }
     
 }

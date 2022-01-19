@@ -496,6 +496,7 @@ MonoBehaviour:
   hurdle2: {fileID: 4255034333686500157, guid: 0f8cda1385601e446ae9144dfc83e1ff, type: 3}
   ScoreHurdle: {fileID: 4255113537229707657, guid: 715d3258648f3f14294dcea7bed90802, type: 3}
   Itemspawner: {fileID: 1118819499}
+  Score: 0
 --- !u!212 &355510003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1666,6 +1667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Thunder: {fileID: 76790699267593164, guid: c305bb124b2b44b42a1f2a5da5ff4cd9, type: 3}
   Booster: {fileID: 8810022326595706242, guid: 7440d75d915688742aa02ed9ea8555ca, type: 3}
+  HpItem: {fileID: 0}
 --- !u!4 &1118819500
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ TagManager:
   - hardborder
   - Thunder
   - Hp
+  - ScoreBorder
   layers:
   - Default
   - TransparentFX
