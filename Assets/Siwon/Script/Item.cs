@@ -10,7 +10,6 @@ public abstract class Item : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-
        
     }
     void Update()

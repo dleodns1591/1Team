@@ -15,20 +15,22 @@ public class hurdlespawnpoint : MonoBehaviour
     private Vector3 positions;
     public Itemspawner Itemspawner;
     const int SPAWN_PERCENT = 2;
-    public int Score = 0;
     private GameObject StandardHurdle;
+
+
     void Start()
     {
         currenttime = spawntime;
     }
     void Update()
     {
-       
+
         if (currenttime <= 0)
         {
             currenttime = spawntime;
 
             spawn();
+            Scorehurdle();
         }
         else
         {
@@ -39,9 +41,9 @@ public class hurdlespawnpoint : MonoBehaviour
     public void spawn()
     {
 
-        
+
         spawnpoint = Random.Range(3.5f, 9.5f);
-        
+
         transform.position = new Vector3(13, spawnpoint, 0);
         if (spawnpoint < 6.5f)
         {
@@ -59,21 +61,20 @@ public class hurdlespawnpoint : MonoBehaviour
         transform.position = new Vector3(13, spawnpoint - 14, 0);
         StandardHurdle = Instantiate(hurdle, transform.position, hurdle.transform.rotation);
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
-        Instantiate(ScoreHurdle, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 7f, 0),Quaternion.Euler(0,0,0));
-        Scorehurdle();
+        
+        
         int randSpawnPercent = Random.Range(0, 10);//아이템 확률
         Debug.Log(randSpawnPercent);
-        if(randSpawnPercent < SPAWN_PERCENT)
+        if (randSpawnPercent < SPAWN_PERCENT)
         {
             Debug.Log("아이템 드랍");
-            Itemspawner.Spawn(ItemType.Thunder, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y+6.5f,0));//아이템 생성
+            Itemspawner.Spawn(ItemType.Thunder, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 6.5f, 0));//아이템 생성
         }
     }
     public void Scorehurdle()
     {
         Debug.Log("스코어 보더");
         Instantiate(ScoreHurdle, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 7f, 0), Quaternion.Euler(0, 0, 0));
-        Score += 1000;
     }
-    
+
 }

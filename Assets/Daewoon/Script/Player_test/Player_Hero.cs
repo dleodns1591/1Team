@@ -16,6 +16,7 @@ public class Player_Hero : MonoBehaviour
     public bool isinvincibility = false;
     public float cooltime = 0;
     public bool booste = false;
+    public int Score = 0;
 
 
     PolygonCollider2D polygon;
@@ -98,11 +99,9 @@ public class Player_Hero : MonoBehaviour
                 Ondamaged();
             }
         }
-        if(other.transform.tag == "hardborder")
+        if(other.transform.tag == "hardborder"&& isinvincibility == false)
         {
             Debug.Log("충돌");
-            if (isinvincibility == false)
-            {
                 if(booste == true)
                 {
                     Debug.Log("부스터중 충돌");
@@ -113,7 +112,10 @@ public class Player_Hero : MonoBehaviour
                     PlayerHp--;
                     Ondamaged();
                 }
-            }
+        }
+        if (other.CompareTag("ScoreBorder"))
+        {
+            Score += 5000;
         }
     }
     

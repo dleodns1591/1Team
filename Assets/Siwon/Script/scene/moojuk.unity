@@ -496,7 +496,6 @@ MonoBehaviour:
   hurdle2: {fileID: 4255034333686500157, guid: 0f8cda1385601e446ae9144dfc83e1ff, type: 3}
   ScoreHurdle: {fileID: 4255113537229707657, guid: 715d3258648f3f14294dcea7bed90802, type: 3}
   Itemspawner: {fileID: 1118819499}
-  Score: 0
 --- !u!212 &355510003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1347,6 +1346,7 @@ MonoBehaviour:
   isinvincibility: 0
   cooltime: 0
   booste: 0
+  Score: 0
 --- !u!60 &991831047
 PolygonCollider2D:
   m_ObjectHideFlags: 0
