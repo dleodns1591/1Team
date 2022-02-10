@@ -14,7 +14,7 @@ public class hurdlespawnpoint : MonoBehaviour
     private float spawnpoint;
     private Vector3 positions;
     public Itemspawner Itemspawner;
-    const int SPAWN_PERCENT = 2;
+    
     private GameObject StandardHurdle;
 
 
@@ -63,13 +63,23 @@ public class hurdlespawnpoint : MonoBehaviour
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
         
         
-        int randSpawnPercent = Random.Range(0, 10);//아이템 확률
-        Debug.Log(randSpawnPercent);
-        if (randSpawnPercent < SPAWN_PERCENT)
+        int randSpawnPercent = Random.Range(0, 5);//아이템 확률
+       
+        switch (randSpawnPercent)
         {
-            Debug.Log("아이템 드랍");
-            Itemspawner.Spawn(ItemType.Thunder, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 6.5f, 0));//아이템 생성
+            case 0: 
+                Debug.Log("번개 아이템");
+                Itemspawner.Spawn(ItemType.Thunder, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 6.5f, 0));//아이템 생성
+                break;
+            case 1:
+                Debug.Log("체력 아이템");
+                Itemspawner.Spawn(ItemType.HpItem, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 6.5f, 0));//아이템 생성
+                break;
+            default:
+
+                break;
         }
+
     }
     public void Scorehurdle()
     {

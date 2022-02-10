@@ -22,7 +22,7 @@ public class HpItem : Item
             }
             else if(player_Hero.PlayerHp == 2f)
             {
-                
+                player_Hero.Score += 2000;
             }
         }
     }
