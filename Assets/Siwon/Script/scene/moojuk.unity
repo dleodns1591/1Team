@@ -1667,7 +1667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Thunder: {fileID: 76790699267593164, guid: c305bb124b2b44b42a1f2a5da5ff4cd9, type: 3}
   Booster: {fileID: 8810022326595706242, guid: 7440d75d915688742aa02ed9ea8555ca, type: 3}
-  HpItem: {fileID: 0}
+  HpItem: {fileID: 2606089872767530897, guid: daa62771b32b1fa4fa43311f535dec7e, type: 3}
 --- !u!4 &1118819500
 Transform:
   m_ObjectHideFlags: 0
