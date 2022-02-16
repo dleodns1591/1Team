@@ -30,7 +30,7 @@ public class hurdlespawnpoint : MonoBehaviour
             currenttime = spawntime;
 
             spawn();
-            Scorehurdle();
+            
         }
         else
         {
@@ -61,8 +61,9 @@ public class hurdlespawnpoint : MonoBehaviour
         transform.position = new Vector3(13, spawnpoint - 14, 0);
         StandardHurdle = Instantiate(hurdle, transform.position, hurdle.transform.rotation);
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
-        
-        
+        Scorehurdle();
+
+
         int randSpawnPercent = Random.Range(0, 5);//æ∆¿Ã≈€ »Æ∑¸
        
         switch (randSpawnPercent)

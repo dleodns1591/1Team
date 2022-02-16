@@ -7,6 +7,7 @@ public abstract class Item : MonoBehaviour
     public float moveSpeed;
     private Vector3 moveleft = Vector3.left;
     public float moveRange;
+    GameManager GameManager;
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {

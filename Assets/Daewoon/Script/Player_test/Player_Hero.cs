@@ -16,8 +16,8 @@ public class Player_Hero : MonoBehaviour
     public bool isinvincibility = false;
     public float cooltime = 0;
     public bool booste = false;
-    public int Score = 0;
-
+    
+    GameManager GameManager;
 
     PolygonCollider2D polygon;
     SpriteRenderer spriterenderer;
@@ -115,7 +115,7 @@ public class Player_Hero : MonoBehaviour
         }
         if (other.CompareTag("ScoreBorder"))
         {
-            Score += 5000;
+            GameManager.Score += 5000;
         }
     }
     

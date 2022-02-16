@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HpItem : Item
 {
+    GameManager GameManager;
     Player_Hero player_Hero;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class HpItem : Item
             }
             else if(player_Hero.PlayerHp == 2f)
             {
-                player_Hero.Score += 2000;
+                GameManager.Score += 2000;
             }
         }
     }
