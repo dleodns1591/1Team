@@ -13,4 +13,8 @@ public class Scorehurdle : MonoBehaviour
             GameManager.Score += 1000;
         }
     }
+    private void Start()
+    {
+        GameManager = GetComponent<GameManager>();
+    }
 }

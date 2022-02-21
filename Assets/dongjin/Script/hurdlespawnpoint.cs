@@ -61,7 +61,7 @@ public class hurdlespawnpoint : MonoBehaviour
         transform.position = new Vector3(13, spawnpoint - 14, 0);
         StandardHurdle = Instantiate(hurdle, transform.position, hurdle.transform.rotation);
         Instantiate(hurdle2, positions, Quaternion.Euler(0, 0, 180));
-        Scorehurdle();
+        Scorehurdle(StandardHurdle.transform.position);
 
 
         int randSpawnPercent = Random.Range(0, 5);//아이템 확률
@@ -82,10 +82,10 @@ public class hurdlespawnpoint : MonoBehaviour
         }
 
     }
-    public void Scorehurdle()
+    public void Scorehurdle(Vector3 transform)
     {
         Debug.Log("스코어 보더");
-        Instantiate(ScoreHurdle, new Vector3(StandardHurdle.transform.position.x, StandardHurdle.transform.position.y + 7f, 0), Quaternion.Euler(0, 0, 0));
+        Instantiate(ScoreHurdle, new Vector3(transform.x, transform.y + 7f, 0), Quaternion.identity);
     }
 
 }
