@@ -20,6 +20,7 @@ public class hero : MonoBehaviour
     private float savePower;
     private float savegravity;
     public float test;
+    private Vector2 herovector;
     void Start()
     {
         spriterenderer = GetComponent<SpriteRenderer>();
@@ -38,8 +39,7 @@ public class hero : MonoBehaviour
         }
         if (ButtonDown)
         {
-            rb.AddForce(new Vector2(0f, HeroPower), ForceMode2D.Force);
-
+            rb.AddForce(new Vector2(0f, HeroPower), ForceMode2D.Impulse);
         }
         if (Input.GetKey(KeyCode.LeftShift) && cooltime <= 0)
         {
@@ -114,7 +114,7 @@ public class hero : MonoBehaviour
         if (cooltime >= 0f)
         {
             cooltime -= Time.deltaTime;
-            if (cooltime <= 1.5f)
+            if (cooltime <= 1.5)
             {
                 booste = false;
                 rb.gravityScale = savegravity;
@@ -122,6 +122,7 @@ public class hero : MonoBehaviour
             }
             else
             {
+                rb.velocity = Vector2.down;
                 transform.position = new Vector3(this.transform.position.x,saveposition, 0);
                 rb.gravityScale = 0;
                 HeroPower = 0;

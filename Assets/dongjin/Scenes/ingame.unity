@@ -5289,6 +5289,8 @@ MonoBehaviour:
   spawntime: 4
   hurdle: {fileID: 5884728179532841821, guid: 20f2863b62cdce6488bd242cff518a5f, type: 3}
   hurdle2: {fileID: 4255034333686500157, guid: 0f8cda1385601e446ae9144dfc83e1ff, type: 3}
+  ScoreHurdle: {fileID: 0}
+  Itemspawner: {fileID: 0}
 --- !u!212 &451688909
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5518,7 +5520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238132ad710d30a47a175c640cf2b3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeroPower: 5
+  HeroPower: 0.05
   ButtonDown: 0
   PlayerHp: 2
   Hp_01: {fileID: 1942147291}
